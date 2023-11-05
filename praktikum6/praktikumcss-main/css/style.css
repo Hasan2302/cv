@@ -1,0 +1,89 @@
+#header {
+    background-color: #f0b484;
+    padding: 10px 0px 10px 0px;
+}
+
+body {
+    background-color: #f8f4dc;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: blue;
+}
+
+blockquote {
+    background-color: yellow;
+}
+
+.breadcrumb ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.breadcrumb a {
+    margin: 0px 20px 0px 0px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.kapital {
+    font-size: 50px;
+    color: blue; 
+}
+
+.max-w-15 {
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+.koleksi {
+    display: flex;
+}
+
+.koleksi img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.foto {
+    display: flex;
+}
+
+.foto img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.paragraf-1 {
+    text-align: justify;
+}
+
+.paragraf-2 {
+    text-align: justify;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.list-none span {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.paragraf-1 span {
+    font-size: 210px;
+    font-family: monospace;
+}
+
+.paragraf-1 img {
+    width: 15rem;
+}
+
+.m-100 {
+    margin: 100px;
+}
