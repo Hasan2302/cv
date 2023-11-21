@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    font-family: arial;
+}
+
+header, article, aside, nav, footer {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    height: 82vh;
+}
+
+header {
+    background-color: bisque;
+}
+
+article {
+    background-color: aquamarine;
+    width: 50%;
+}
+
+aside {
+    background-color: cadetblue;
+    width: 25%;
+}
+nav {
+    background-color: darkseagreen;
+    width: 25%;
+}
+
+footer {
+    background-color: aqua;
+}
