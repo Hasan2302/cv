@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Dua Bilangan</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function jumlah() {
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            
+            let hasil = parseInt(angka1) + parseInt(angka2);
+            
+            let areaHasil = document.getElementById("hasil");
+            areaHasil.innerHTML = "Hasil: " + hasil;
+        }
+    </script>
+</head>
+<body>
+    <h1>Penjumlahan Dua Bilangan</h1>
+
+    Masukkan angka 1:
+    <input type="number" value="" id="angka1">
+
+    +
+
+    Masukkan angka 2:
+    <input type="number" value="" id="angka2">
+
+    <button onclick="jumlah()">Jumlahkan!</button>
+
+    <br>
+
+    <h2>Hasil</h2>
+    <span id="hasil"></span>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas dan Keliling Lingkaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Hitung Luas dan Keliling Lingkaran</h2>
+
+    <label for="sisi">Jari-jari Lingkaran:</label>
+    <input type="number" id="sisi" placeholder="Masukkan sisi">
+
+    <button onclick="kalkulasi()">Hitung</button>
+
+    <div id="result"></div>
+
+    <script>
+        function kalkulasi() {
+            var r = parseFloat(document.getElementById("sisi").value);
+
+            if (isNaN(r)) {
+                alert("Masukkan angka yang valid untuk jari-jari!");
+                return;
+            }
+
+            var area = Math.PI * r * r;
+            var keliling = 2 * Math.PI * r;
+
+            var resultMessage = "Luas Lingkaran: " + area.toFixed(2) + "<br>Keliling Lingkaran: " + keliling.toFixed(2);
+            document.getElementById("result").innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>
