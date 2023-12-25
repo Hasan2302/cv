@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function image_picker() {
+        const daftar_gambar = ["buaya1.jpg", "buaya2.jpg", "buaya3.jpg", "buaya4.jpg", "buaya5.jpg", "buaya6.jpg"];
+        let pilihan = document.getElementById("option").value;
+
+        if(pilihan == "buaya1"){
+            let select = daftar_gambar[0];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+        if(pilihan == "buaya2"){
+            let select = daftar_gambar[1];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+        if(pilihan == "buaya3"){
+            let select = daftar_gambar[2];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+        if(pilihan == "buaya4"){
+            let select = daftar_gambar[3];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+        if(pilihan == "buaya5"){
+            let select = daftar_gambar[4];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+        if(pilihan == "buaya6"){
+            let select = daftar_gambar[5];
+            document.getElementById("gambar").src = `img/${select}`;
+            alert(`Selected image: ${select}`);
+        }
+    } 
+</script>
+
+<body>
+    <!-- <label for="Animal">Image Piker</label> -->
+    <select name="Animal" id="option" onchange="image_picker()">
+        <option value="">Pilih Gambar:</option>
+        <option value="buaya1">Buaya 1</option>
+        <option value="buaya2">Buaya 2</option>
+        <option value="buaya3">Buaya 3</option>
+        <option value="buaya4">Buaya 4</option>
+        <option value="buaya5">Buaya 5</option>
+        <option value="buaya6">Buaya 6</option>
+    </select>
+
+    <div class="container">
+        <img id="gambar" alt="" width="500px">
+    </div>
+</body>
+</html>
